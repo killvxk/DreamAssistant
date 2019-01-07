@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{080ebcff-ffe1-4e21-bbe2-465dcce83693}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Tu-ui">
+      <UniqueIdentifier>{15506ff1-ed33-4680-a134-8ebe89d8e44c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-3rdparty">
+      <UniqueIdentifier>{89d9dff9-415c-46f8-a053-54c4dc6ffa56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-3rdparty\Tu-singleappliction">
+      <UniqueIdentifier>{8756d6e4-0fbf-4ba3-9683-e2e93066dfbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-ui\Tu-common">
+      <UniqueIdentifier>{82712717-4ded-4536-b1c4-87ac4f68166a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-ui\Tu-component">
+      <UniqueIdentifier>{96935c32-69be-407b-bd4f-0cdbe2db2fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-ui\Tu-page">
+      <UniqueIdentifier>{0f354998-638e-48dd-9ed0-770d2e6065e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-ui\Tu-dialog">
+      <UniqueIdentifier>{ce1a4a7a-dc4f-4b64-bb99-f006228863b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-ui\Tu-utils">
+      <UniqueIdentifier>{e5a0d53b-a880-4197-93df-f74256ae1267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-ui\Tu-page\Tu-cleanup">
+      <UniqueIdentifier>{008dbbd7-b7a6-46bc-9fd6-3523eb21bc99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-ui\Tu-page\Tu-evaluation">
+      <UniqueIdentifier>{f50cb837-38a4-433d-a542-e6aafbca9196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-ui\Tu-page\Tu-feature">
+      <UniqueIdentifier>{625d341b-0e15-4dea-b78a-c857364ff4c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-ui\Tu-page\Tu-toolkits">
+      <UniqueIdentifier>{5dab50ab-76ee-4a44-b71f-1d0e1fa91790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-dbusproxy">
+      <UniqueIdentifier>{86b4ad89-1b20-4787-9a7e-5429d5ea0e5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-business">
+      <UniqueIdentifier>{ff1f2294-1cf2-4411-97a0-8091949f9fb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-business\Tu-core">
+      <UniqueIdentifier>{d98aafad-fed0-4192-bb91-23139bbd093d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-business\Tu-device">
+      <UniqueIdentifier>{0d117a8f-d12e-408c-8db5-0ae9a45c6c97}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tu-3rdparty\Tu-singleappliction\qtlocalpeer.cpp">
+      <Filter>Tu-3rdparty\Tu-singleappliction</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtlocalpeer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-3rdparty\Tu-singleappliction\qtsingleapplication.cpp">
+      <Filter>Tu-3rdparty\Tu-singleappliction</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtsingleapplication.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\main.cpp">
+      <Filter>Tu-ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu_mainwindow.cpp">
+      <Filter>Tu-ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_mainwindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-component\Tu_actionwidget.cpp">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_actionwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-component\Tu_basedialog.cpp">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_basedialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-component\Tu_cardwidget.cpp">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_cardwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-component\Tu_contentwidget.cpp">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_contentwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-component\Tu_loginwidget.cpp">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_loginwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-component\Tu_mainmenu.cpp">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_mainmenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-component\Tu_titlewidget.cpp">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_titlewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-component\Tu_toolwidget.cpp">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_toolwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-common\Tu_toolbutton.cpp">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_toolbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-common\Tu_pushbutton.cpp">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_pushbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu_cleanupactionwidget.cpp">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_cleanupactionwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu_cleanuppage.cpp">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_cleanuppage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu_evaluationactionwidget.cpp">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_evaluationactionwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu_evaluationpage.cpp">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_evaluationpage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu_featureactionwidget.cpp">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_featureactionwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu_featurepage.cpp">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_featurepage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu_homeactionwidget.cpp">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_homeactionwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu_homepage.cpp">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_homepage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu_toolkitsactionwidget.cpp">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_toolkitsactionwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu_toolkitspage.cpp">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_toolkitspage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-common\Tu_loadinglabel.cpp">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_loadinglabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-common\Tu_mapbutton.cpp">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_mapbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-dialog\Tu_aboutdialog.cpp">
+      <Filter>Tu-ui\Tu-dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_aboutdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-dialog\Tu_skindialog.cpp">
+      <Filter>Tu-ui\Tu-dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_skindialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-dialog\Tu_upgradedialog.cpp">
+      <Filter>Tu-ui\Tu-dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_upgradedialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-common\Tu_itemcard.cpp">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_itemcard.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu-toolkits\Tu_pluginmanager.cpp">
+      <Filter>Tu-ui\Tu-page\Tu-toolkits</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-common\Tu_listmodel.cpp">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_Tu_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-dbusproxy\Tu_sessiondispatcher.cpp">
+      <Filter>Tu-dbusproxy</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_sessiondispatcher.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-dbusproxy\Tu_systemdispatcher.cpp">
+      <Filter>Tu-dbusproxy</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_systemdispatcher.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-business\Tu_businessinterface.cpp">
+      <Filter>Tu-business</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_businessinterface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-business\Tu-device\Tu_filedevice.cpp">
+      <Filter>Tu-business\Tu-device</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Tu-3rdparty\Tu-singleappliction\qtlocalpeer.h">
+      <Filter>Tu-3rdparty\Tu-singleappliction</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-3rdparty\Tu-singleappliction\qtsingleapplication.h">
+      <Filter>Tu-3rdparty\Tu-singleappliction</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu_mainwindow.h">
+      <Filter>Tu-ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-component\Tu_actionwidget.h">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-component\Tu_basedialog.h">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-component\Tu_cardwidget.h">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-component\Tu_contentwidget.h">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-component\Tu_loginwidget.h">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-component\Tu_mainmenu.h">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-component\Tu_titlewidget.h">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-component\Tu_toolwidget.h">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-common\Tu_toolbutton.h">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-common\Tu_pushbutton.h">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu_cleanupactionwidget.h">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu_cleanuppage.h">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu_evaluationactionwidget.h">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu_evaluationpage.h">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu_featureactionwidget.h">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu_featurepage.h">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu_homeactionwidget.h">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu_homepage.h">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu_toolkitsactionwidget.h">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu_toolkitspage.h">
+      <Filter>Tu-ui\Tu-page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-common\Tu_loadinglabel.h">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-common\Tu_mapbutton.h">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-dialog\Tu_aboutdialog.h">
+      <Filter>Tu-ui\Tu-dialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-dialog\Tu_skindialog.h">
+      <Filter>Tu-ui\Tu-dialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-dialog\Tu_upgradedialog.h">
+      <Filter>Tu-ui\Tu-dialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-common\Tu_itemcard.h">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\res\Tu_mainwindow.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-dbusproxy\Tu_sessiondispatcher.h">
+      <Filter>Tu-dbusproxy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-dbusproxy\Tu_systemdispatcher.h">
+      <Filter>Tu-dbusproxy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-business\Tu_businessinterface.h">
+      <Filter>Tu-business</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tu-ui\Tu-untils\Tu_common.h">
+      <Filter>Tu-ui\Tu-utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-ui\Tu-utils\Tu_utils.h">
+      <Filter>Tu-ui\Tu-utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-ui\Tu-page\Tu-toolkits\Tu_plugininterface.h">
+      <Filter>Tu-ui\Tu-page\Tu-toolkits</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-ui\Tu-page\Tu-toolkits\Tu_pluginmanager.h">
+      <Filter>Tu-ui\Tu-page\Tu-toolkits</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-ui\Tu-common\Tu_listmodel.h">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-business\Tu-core\Tu_singleton.h">
+      <Filter>Tu-business\Tu-core</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-business\Tu-device\Tu_filedevice.h">
+      <Filter>Tu-business\Tu-device</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
