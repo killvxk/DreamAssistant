@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Tu-ui">
+      <UniqueIdentifier>{1365a028-1e3b-4cf4-866e-bc2a33276566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{17be9bf3-8a76-4033-abaa-5862f2604130}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Tu-interface">
+      <UniqueIdentifier>{c3b2fed7-7fe7-4633-a96b-a9645115bb01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-component">
+      <UniqueIdentifier>{4ac021c8-fbf2-4c36-b8b1-c5e907c264ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-common">
+      <UniqueIdentifier>{4d4f0493-7bc8-4fe5-b561-d057f17c1aea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tu-ui\Tu_shreddialog.cpp">
+      <Filter>Tu-ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_shreddialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-interface\Tu_filewipe.cpp">
+      <Filter>Tu-interface</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_filewipe.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-interface\Tu_shredfile.cpp">
+      <Filter>Tu-interface</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_shredfile.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_Tu_shreddialog.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tu-ui\Tu-component\Tu_msgbox.cpp">
+      <Filter>Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_msgbox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tu-ui\Tu-component\Tu_titlebar.cpp">
+      <Filter>Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_titlebar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_editbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_pushbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tu-ui\Tu-common\Tu_pushbutton.cpp">
+      <Filter>Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tu-ui\Tu-common\Tu_editbutton.cpp">
+      <Filter>Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tu-ui\Tu-component\Tu_basedialog.cpp">
+      <Filter>Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_basedialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tu-interface\Tu_define.h">
+      <Filter>Tu-interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Tu-ui\Tu_shreddialog.h">
+      <Filter>Tu-ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-interface\Tu_filewipe.h">
+      <Filter>Tu-interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-interface\Tu_shredfile.h">
+      <Filter>Tu-interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\res\Tu_shreddialog.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Tu-ui\Tu-component\Tu_msgbox.h">
+      <Filter>Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Tu-ui\Tu-component\Tu_titlebar.h">
+      <Filter>Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Tu-ui\Tu-common\Tu_pushbutton.h">
+      <Filter>Tu-common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Tu-ui\Tu-common\Tu_editbutton.h">
+      <Filter>Tu-common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Tu-ui\Tu-component\Tu_basedialog.h">
+      <Filter>Tu-component</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

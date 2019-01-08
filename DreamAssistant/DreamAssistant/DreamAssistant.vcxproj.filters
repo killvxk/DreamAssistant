@@ -281,6 +281,24 @@
     <ClCompile Include="Tu-business\Tu-device\Tu_filedevice.cpp">
       <Filter>Tu-business\Tu-device</Filter>
     </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-component\Tu_msgbox.cpp">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_msgbox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-component\Tu_titlebar.cpp">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_titlebar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-common\Tu_editbutton.cpp">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_editbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Tu-3rdparty\Tu-singleappliction\qtlocalpeer.h">
@@ -381,6 +399,15 @@
     </CustomBuild>
     <CustomBuild Include="Tu-business\Tu_businessinterface.h">
       <Filter>Tu-business</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-component\Tu_msgbox.h">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-component\Tu_titlebar.h">
+      <Filter>Tu-ui\Tu-component</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-common\Tu_editbutton.h">
+      <Filter>Tu-ui\Tu-common</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

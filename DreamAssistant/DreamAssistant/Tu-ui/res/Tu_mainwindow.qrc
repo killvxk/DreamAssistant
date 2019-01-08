@@ -192,5 +192,7 @@
         <file>upgrade/working/35.png</file>
         <file>upgrade/working/36.png</file>
         <file>dream.qss</file>
+        <file>plugins/shred/folder.png</file>
+        <file>plugins/shred/folder_hover.png</file>
     </qresource>
 </RCC>
