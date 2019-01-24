@@ -72,6 +72,12 @@
     <Filter Include="Tu-business\Tu-device">
       <UniqueIdentifier>{0d117a8f-d12e-408c-8db5-0ae9a45c6c97}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tu-business\Tu-pipeline">
+      <UniqueIdentifier>{b593088e-4437-4444-95e2-5689ede0351d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-plugins">
+      <UniqueIdentifier>{97ae5acc-7320-4fc4-ae9f-03abbaae8e94}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Tu-3rdparty\Tu-singleappliction\qtlocalpeer.cpp">
@@ -251,9 +257,6 @@
     <ClCompile Include="GeneratedFiles\Release\moc_Tu_itemcard.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="Tu-ui\Tu-page\Tu-toolkits\Tu_pluginmanager.cpp">
-      <Filter>Tu-ui\Tu-page\Tu-toolkits</Filter>
-    </ClCompile>
     <ClCompile Include="Tu-ui\Tu-common\Tu_listmodel.cpp">
       <Filter>Tu-ui\Tu-common</Filter>
     </ClCompile>
@@ -297,6 +300,48 @@
       <Filter>Tu-ui\Tu-common</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_Tu_editbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-business\Tu-pipeline\Tu_pipeline.cpp">
+      <Filter>Tu-business\Tu-pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_pipeline.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-business\Tu-pipeline\Tu_taskbase.cpp">
+      <Filter>Tu-business\Tu-pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_taskbase.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-business\Tu-pipeline\Tu_workingthread.cpp">
+      <Filter>Tu-business\Tu-pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_workingthread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_navigationbar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu-toolkits\Tu_navigationbar.cpp">
+      <Filter>Tu-ui\Tu-page\Tu-toolkits</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_scrollarea.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-page\Tu-toolkits\Tu_scrollarea.cpp">
+      <Filter>Tu-ui\Tu-page\Tu-toolkits</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-ui\Tu-common\Tu_styleddelegate.cpp">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_styleddelegate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-plugins\Tu_pluginmanager.cpp">
+      <Filter>Tu-plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_interfacebase.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
   </ItemGroup>
@@ -409,19 +454,34 @@
     <CustomBuild Include="Tu-ui\Tu-common\Tu_editbutton.h">
       <Filter>Tu-ui\Tu-common</Filter>
     </CustomBuild>
+    <CustomBuild Include="Tu-business\Tu-pipeline\Tu_pipeline.h">
+      <Filter>Tu-business\Tu-pipeline</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-business\Tu-pipeline\Tu_taskbase.h">
+      <Filter>Tu-business\Tu-pipeline</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-business\Tu-pipeline\Tu_workingthread.h">
+      <Filter>Tu-business\Tu-pipeline</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu-toolkits\Tu_navigationbar.h">
+      <Filter>Tu-ui\Tu-page\Tu-toolkits</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-page\Tu-toolkits\Tu_scrollarea.h">
+      <Filter>Tu-ui\Tu-page\Tu-toolkits</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-ui\Tu-common\Tu_styleddelegate.h">
+      <Filter>Tu-ui\Tu-common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-business\Tu-core\Tu_define.h">
+      <Filter>Tu-business\Tu-core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-business\Tu_interfacebase.h">
+      <Filter>Tu-business</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Tu-ui\Tu-untils\Tu_common.h">
-      <Filter>Tu-ui\Tu-utils</Filter>
-    </ClInclude>
     <ClInclude Include="Tu-ui\Tu-utils\Tu_utils.h">
       <Filter>Tu-ui\Tu-utils</Filter>
-    </ClInclude>
-    <ClInclude Include="Tu-ui\Tu-page\Tu-toolkits\Tu_plugininterface.h">
-      <Filter>Tu-ui\Tu-page\Tu-toolkits</Filter>
-    </ClInclude>
-    <ClInclude Include="Tu-ui\Tu-page\Tu-toolkits\Tu_pluginmanager.h">
-      <Filter>Tu-ui\Tu-page\Tu-toolkits</Filter>
     </ClInclude>
     <ClInclude Include="Tu-ui\Tu-common\Tu_listmodel.h">
       <Filter>Tu-ui\Tu-common</Filter>
@@ -432,5 +492,22 @@
     <ClInclude Include="Tu-business\Tu-device\Tu_filedevice.h">
       <Filter>Tu-business\Tu-device</Filter>
     </ClInclude>
+    <ClInclude Include="Tu-ui\Tu-utils\Tu_common.h">
+      <Filter>Tu-ui\Tu-utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-ui\res\resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-plugins\Tu_plugininterface.h">
+      <Filter>Tu-plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-plugins\Tu_pluginmanager.h">
+      <Filter>Tu-plugins</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Tu-ui\res\DreamAssistant.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

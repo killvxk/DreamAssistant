@@ -1,5 +1,4 @@
 #include "Tu_sessiondispatcher.h"
-#include <QDebug>
 
 SessionDispatcher::SessionDispatcher(QObject *parent)
 	: QObject(parent)

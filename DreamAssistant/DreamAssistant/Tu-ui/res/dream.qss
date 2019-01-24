@@ -400,44 +400,32 @@ QListWidget#animationListWidget::item:selected {
 }
 
 QListWidget#infoList{
-    border:1px solid #e0e0e0;/*#d5e3ec*/
-    border-radius:4px;
+    border:0px solid gray;
+    background:#eeeeee;
+    font-family: "方正黑体_GBK";
+    font-size: 13px;
 }
 
 QListWidget#infoList::item{
-    height:31px;
+    height:67px;
     padding-left:27px;
-    margin-top:-1px;
-    border:1px solid #d5e3ec;
-    background:#ffffff;
-    color:#000000;
-    font-family: "方正黑体_GBK";
-    font-size: 12px;
+    background:#eeeeee;
+    color:#333;
 }
 
 QListWidget#infoList::item:hover{
-    background:#e9eef0;
-    color:#000000;
-    font-family: "方正黑体_GBK";
-    font-size: 12px;
-    border:none;
-    margin:0px;
+    background:#dddddd;
 }
 
 QListWidget#infoList::item:selected {
-     border:none;
-     background:#3f96e4;
-     color:#ffffff;
-     font-family: "方正黑体_GBK";
-     font-size: 12px;
-     margin:0px;
+     background:#fff;
 }
 
 QListWidget#infoList::item:selected:!active {
-     border-width: 0px ;
+     background:#fff;
 }
 QListWidget#infoList::item:selected:active {
-     border-width: 1px;
+     background:#fff;
 }
 
 /*-------------------QTabWidget-------------------*/

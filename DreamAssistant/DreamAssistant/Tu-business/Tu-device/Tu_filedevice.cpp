@@ -1,171 +1,130 @@
 #include "Tu_filedevice.h"
-#include <QDebug>
 
-FileDevice::FileDevice()
+#include <dirent.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <direct.h>
+#include <functional>
+
+struct ExitCaller {
+    ~ExitCaller() { functor_(); }
+    ExitCaller(std::function<void()> &&functor) : functor_(std::move(functor)) {}
+
+private:
+    std::function<void()> functor_;
+};
+
+bool FileDevice::fileExists(const std::string &fname)
 {
-
+    return access(fname.c_str(), 0) == 0;
 }
 
-FileDevice::~FileDevice()
+bool FileDevice::renameFile(const std::string &src, const std::string &target)
 {
-
+    return rename(src.c_str(), target.c_str()) == 0;
 }
 
-bool FileDevice::deleteFile(const QString &path)
+bool FileDevice::getFileSize(const std::string &fname, uint64_t *size)
 {
-	QFile file(path);
+    struct stat sbuf;
+    if (stat(fname.c_str(), &sbuf) != 0) {
+        *size = 0;
+        return false;
+    } else {
+        *size = sbuf.st_size;
+    }
 
-	if (!file.exists()) {
-		qWarning() << "File does not exist!";
-		return false;
-	}
-
-	if (!file.remove()) {
-		qWarning() << "File deletion failed!";
-		return false;
-	}
-
-	return true;
+    return true;
 }
 
-bool FileDevice::deleteDir(const QString &path)
+bool FileDevice::createDir(const std::string &name)
 {
-	QDir dir(path);
-
-	if (!dir.exists()) {
-		qWarning() << "Dir does not exist!";
-		return false;
-	}
-
-	if (!dir.rmdir(path)) {
-		qWarning() << "Dir deletion failed!";
-		return false;
-	}
-
-	return true;
+    return mkdir(name.c_str()) == 0;
 }
 
-bool FileDevice::createFile(const QString &path)
+bool FileDevice::deleteDir(const std::string &name)
 {
-	QFile file(path);
-
-	if (file.exists()) {
-		return true;
-	}
-
-	bool isOpen = file.open(QIODevice::WriteOnly);
-	file.close();
-
-	if (!isOpen) {
-		qWarning() << "File create failed!";
-	}
-
-	return isOpen;
+    return rmdir(name.c_str()) == 0;
 }
 
-bool FileDevice::createDir(const QString &path)
+bool FileDevice::deleteFile(const std::string &fname)
 {
-	QDir dir(path);
-
-	if (!dir.mkpath(path)) {
-		qWarning() << "Directory creation failed!";
-		return false;
-	}
-
-	return true;
+    return unlink(fname.c_str()) == 0;
 }
 
-bool FileDevice::renameFile(const QString &oldName, const QString &newName)
+bool FileDevice::copyFile(const std::string &src, const std::string &target)
 {
-	QDir dir(oldName);
-
-	if (!dir.exists()) {
-		qWarning() << "File does not exist!";
-		return false;
-	}
-
-	if (dir.rename(oldName, newName)) {
-		qWarning() << "File rename failed!";
-		return false;
-	}
-
-	return true;
+    return true;
 }
 
-bool FileDevice::copyFileToPath(QString sourceDir, QString toDir, bool coverFileIfExist)
+bool FileDevice::getChildren(const std::string &dir, std::vector<std::string> *result) 
 {
-	toDir.replace("\\", "/");
+    result->clear();
 
-	if (sourceDir == toDir){
-		return true;
-	}
+    DIR *d = opendir(dir.c_str());
+    if (d == NULL) {
+        return false;
+    }
 
-	if (!QFile::exists(sourceDir)){
-		return false;
-	}
+    struct dirent *entry;
+    while ((entry = readdir(d)) != NULL) {
+        result->push_back(entry->d_name);
+    }
 
-	QDir dir(toDir);
-	if (dir.exists() && coverFileIfExist){
-		dir.remove(toDir);
-	}
+    closedir(d);
 
-	if (!QFile::copy(sourceDir, toDir)){
-		return false;
-	}
-
-	return true;
+    return false;
 }
 
-bool FileDevice::copyDirectoryFiles(const QString &fromDir, const QString &toDir, bool coverFileIfExist)
+bool FileDevice::renameSave(const std::string &name, const std::string &tmpName, const std::string &cont)
 {
-	QDir sourceDir(fromDir);
-	QDir targetDir(toDir);
+    bool is_ok = writeContent(tmpName, cont);
+    if (!is_ok) {
+        return false;
+    }
 
-	if (!targetDir.exists()){  
-		if (!targetDir.mkdir(targetDir.absolutePath()))
-			return false;
-	}
+    unlink(name.c_str());
 
-	QFileInfoList fileInfoList = sourceDir.entryInfoList();
-	foreach(QFileInfo fileInfo, fileInfoList){
-		if (fileInfo.fileName() == "." || fileInfo.fileName() == "..")
-			continue;
-
-		if (fileInfo.isDir()){   
-			if (!copyDirectoryFiles(fileInfo.filePath(), targetDir.filePath(fileInfo.fileName()), coverFileIfExist))
-				return false;
-		} else {           
-			if (coverFileIfExist && targetDir.exists(fileInfo.fileName())) {
-				targetDir.remove(fileInfo.fileName());
-			}
-
-			if (!QFile::copy(fileInfo.filePath(), targetDir.filePath(fileInfo.fileName()))) {
-				return false;
-			}
-		}
-	}
-
-	return true;
+    return renameFile(tmpName, name);
 }
 
-bool FileDevice::isFileExist(const QString &filename)
+bool FileDevice::getContent(const std::string &filename, std::string &cont) 
 {
-	QFileInfo fileInfo(filename);
+    int fd = open(filename.c_str(), O_RDONLY);
+    if (fd < 0) {
+        return false;
+    }
 
-	if (!fileInfo.isFile()) {
-		return false;
-	}
+    ExitCaller ec1([=] { close(fd); });
+    char buf[4096];
+    for (;;) {
+        int r = read(fd, buf, sizeof buf);
+        if (r < 0) {
+            return false;
+        } else if (r == 0) {
+            break;
+        }
+        cont.append(buf, r);
+    }
 
-	return true;
+    return true;
 }
 
-bool FileDevice::isDirExist(const QString &dirname)
+bool FileDevice::writeContent(const std::string &filename, const std::string &cont) 
 {
-	QFileInfo fileInfo(dirname);
+    int fd = open(filename.c_str(), O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+    if (fd < 0) {
+        return false;
+    }
 
-	if (!fileInfo.isDir()) {
-		return false;
-	}
+    ExitCaller ec1([=] { close(fd); });
+    int r = write(fd, cont.data(), cont.size());
+    if (r < 0) {
+        return false;
+    }
 
-	return true;
+    return true;
 }
+

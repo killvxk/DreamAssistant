@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<layout>
+		<Node label="Common" info="1" collapse="1">
+             <Node label="File shred"></Node>
+		</Node>
+		<Node label="Document" info="1" collapse="1">
+             <Node label="File shred"></Node>
+		</Node>
+		<Node label="Internet" info="1" collapse="1">
+             <Node label="File shred"></Node>
+		</Node>
+		<Node label="System" info="1" collapse="1">
+             <Node label="File shred"></Node>
+		</Node>
+		<Node label="Software" info="1" collapse="1">
+             <Node label="File shred"></Node>
+		</Node>
+		<Node label="Others" info="1" collapse="1">
+             <Node label="File shred"></Node>
+		</Node>
+	</layout>
+</root>

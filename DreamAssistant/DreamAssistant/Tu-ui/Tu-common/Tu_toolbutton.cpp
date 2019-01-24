@@ -7,7 +7,7 @@ ToolButton::ToolButton(const QString &pic_name, const QString &text, QWidget *pa
 	setFocusPolicy(Qt::NoFocus);
 
 	setText(text);
-	setStyleSheet("background:transparent;border:0px;color:rgb(0, 112, 223);font-weight:bold;font-size:15px;");
+    setStyleSheet("background:transparent;border:0px;color:rgb(0, 112, 223);font-weight:bold;font-size:15px;");
 
 	setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 	setPopupMode(QToolButton::InstantPopup);

@@ -1,29 +1,30 @@
 #ifndef TU_FILEDEVICE_H
 #define TU_FILEDEVICE_H
 
-#include <QDir>
-#include <QFile>
-#include <QFileInfo>
-
-#include "../Tu-core/Tu_singleton.h"
+#include <string>
+#include <vector>
+#include <stdint.h>
+#include <stdio.h>
 
 class FileDevice
 {
-	SINGLETON(FileDevice)
 public:
-	bool deleteFile(const QString &path);
-	bool deleteDir(const QString &path);
+    static bool getContent(const std::string &filename, std::string &cont);
+    static bool writeContent(const std::string &filename, const std::string &cont);
 
-	bool createFile(const QString &path);
-	bool createDir(const QString &path);
+    static bool renameSave(const std::string &name, const std::string &tmpName, const std::string &cont);
+    static bool getChildren(const std::string &dir, std::vector<std::string> *result);
 
-	bool renameFile(const QString &oldName, const QString &newName);
+    static bool deleteFile(const std::string &fname);
+    static bool copyFile(const std::string &src, const std::string &target);
 
-	bool copyFileToPath(QString sourceDir, QString toDir, bool coverFileIfExist);
-	bool copyDirectoryFiles(const QString &fromDir, const QString &toDir, bool coverFileIfExist);
+    static bool createDir(const std::string &name);
+    static bool deleteDir(const std::string &name);
 
-	bool isFileExist(const QString &filename);
-	bool isDirExist(const QString &dirname);
+    static bool getFileSize(const std::string &fname, uint64_t *size);
+    static bool renameFile(const std::string &src, const std::string &target);
+
+    static bool fileExists(const std::string &fname);
 };
 
 #endif // TU_FILEDEVICE_H

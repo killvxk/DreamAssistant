@@ -3,8 +3,6 @@
 
 #include <QObject>
 
-#include "Tu-business/Tu_businessinterface.h"
-
 class SystemDispatcher : public QObject
 {
 	Q_OBJECT
@@ -16,7 +14,7 @@ public:
 	bool delete_file(QString filename);
 
 private:
-	BusinessInterface *businessInterface;
+
 };
 
 #endif // TU_SYSTEMDISPATCHER_H

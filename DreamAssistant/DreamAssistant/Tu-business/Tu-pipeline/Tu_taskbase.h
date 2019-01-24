@@ -22,6 +22,8 @@ public:
 	bool LockRun();
 	void UnlockRun();
 
+    bool bTermSet;
+
 private:
 	int refCount;
 

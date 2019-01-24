@@ -2,12 +2,12 @@
 #include "./Tu_plugininterface.h"
 #include <QDir>
 
-PluginManager::PluginManager(void)
+PluginManager::PluginManager()
 {
 
 }
 
-PluginManager::~PluginManager(void)
+PluginManager::~PluginManager()
 {
 
 }
@@ -20,7 +20,7 @@ PluginManager* PluginManager::Instance()
 
 bool PluginManager::loadPlugin(QString plugin_path)
 {
-	QDir pluginsDir(plugin_path + "/plugins");
+	QDir pluginsDir(plugin_path);
 	foreach(QString fileName, pluginsDir.entryList(QStringList("*.dll"), QDir::Files))
 	{
 		QPluginLoader *pluginLoader = new QPluginLoader(pluginsDir.absoluteFilePath(fileName));

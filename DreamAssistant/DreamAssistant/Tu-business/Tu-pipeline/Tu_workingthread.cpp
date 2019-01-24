@@ -28,7 +28,7 @@ void WorkingThread::setStopMark(WorkingThread * obj)
 	m_pipeline->m_mutex_protect.unlock();
 
 	this->deleteLater();
-	QThread::currentThread()->quit();
+    QThread::currentThread()->quit();  
 }
 
 void WorkingThread::FetchNewTask(WorkingThread * obj)

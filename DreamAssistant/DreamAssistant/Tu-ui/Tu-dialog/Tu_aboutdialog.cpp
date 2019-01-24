@@ -158,7 +158,7 @@ void AboutDialog::setLanguage()
 					   .arg(tr("The software is still under development.Please visit <a style='color: #3f96e4;' href=\"https://blog.csdn.net/x85371169\">blog.csdn.net</a> for more information. Welcome everyone to join with us."))
 					   .arg(tr("Dream-assistant Homepage: <a style='color: #3f96e4;' href=\"https://github.com/zhangmw1992/Dream\">https://github.com</a>")));
 
-	contributorEdit->setText(tr("Maintainer:\n\r    Mr.zhang <13699133727@163.com>"));
+	contributorEdit->setText(tr("Maintainer:\n\r    Mr.zhang <136xxxxxxxx@163.com>"));
 
 	okBtn->setText(tr("Close"));
 }

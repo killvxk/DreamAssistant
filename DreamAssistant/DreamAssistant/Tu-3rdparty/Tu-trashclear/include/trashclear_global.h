@@ -1,0 +1,12 @@
+#ifndef TRASHCLEAR_GLOBAL_H
+#define TRASHCLEAR_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#ifdef TRASHCLEAR_LIB
+# define TRASHCLEAR_EXPORT Q_DECL_EXPORT
+#else
+# define TRASHCLEAR_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // TRASHCLEAR_GLOBAL_H

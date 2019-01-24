@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Tu-common">
+      <UniqueIdentifier>{58bae217-5772-4eea-bea4-f2afd676b4c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-core">
+      <UniqueIdentifier>{99dd0c51-5d38-4540-90ae-f8aa032f631a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-registry">
+      <UniqueIdentifier>{c2b96189-ecd9-4d69-a3cc-f7d9cf66e50d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{4f58700d-38fc-4043-af93-87cd988c2e97}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Tu-task">
+      <UniqueIdentifier>{6a4dee71-9104-44ac-9ad6-e3d7389bb76c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tu-interface">
+      <UniqueIdentifier>{f77d1b37-f264-44ef-b45c-5e71b1b579d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tu-common\Tu_configdata.cpp">
+      <Filter>Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-common\Tu_filedelete.cpp">
+      <Filter>Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-common\Tu_filtertool.cpp">
+      <Filter>Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-common\Tu_getenvpath.cpp">
+      <Filter>Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-common\Tu_scandirinfo.cpp">
+      <Filter>Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-common\Tu_scanresult.cpp">
+      <Filter>Tu-common</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-registry\Tu_operatorregedit.cpp">
+      <Filter>Tu-registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-registry\Tu_upgradeprivilege.cpp">
+      <Filter>Tu-registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-interface\Tu_trashclean.cpp">
+      <Filter>Tu-interface</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_trashclean.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Tu-interface\Tu_trashscan.cpp">
+      <Filter>Tu-interface</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_trashscan.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tu-business\Tu-pipeline\Tu_taskbase.cpp">
+      <Filter>Tu-task</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Tu_taskbase.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tu-common\Tu_configdata.h">
+      <Filter>Tu-common</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-common\Tu_filedelete.h">
+      <Filter>Tu-common</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-common\Tu_filtertool.h">
+      <Filter>Tu-common</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-common\Tu_getenvpath.h">
+      <Filter>Tu-common</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-common\Tu_scandirinfo.h">
+      <Filter>Tu-common</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-common\Tu_scanresult.h">
+      <Filter>Tu-common</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-common\Tu_trashdefine.h">
+      <Filter>Tu-common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tu-business\Tu-core\Tu_singleton.h">
+      <Filter>Tu-core</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-registry\Tu_operatorregedit.h">
+      <Filter>Tu-registry</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-registry\Tu_upgradeprivilege.h">
+      <Filter>Tu-registry</Filter>
+    </ClInclude>
+    <ClInclude Include="Tu-interface\trashclear_global.h">
+      <Filter>Tu-interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Tu-interface\Tu_trashclean.h">
+      <Filter>Tu-interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tu-interface\Tu_trashscan.h">
+      <Filter>Tu-interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Tu-business\Tu-pipeline\Tu_taskbase.h">
+      <Filter>Tu-task</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

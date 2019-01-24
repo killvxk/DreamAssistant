@@ -4,6 +4,7 @@ TaskBase::TaskBase(QObject *parent)
 	: QObject(parent)
 {
 	refCount = 0;
+    bTermSet = false;
 }
 
 TaskBase::~TaskBase()

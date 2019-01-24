@@ -194,5 +194,6 @@
         <file>dream.qss</file>
         <file>plugins/shred/folder.png</file>
         <file>plugins/shred/folder_hover.png</file>
+        <file>plugins/shred/shredder.png</file>
     </qresource>
 </RCC>

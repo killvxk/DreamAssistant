@@ -1,46 +1,35 @@
 #ifndef TU_BUSINESSINTERFACE_H
 #define TU_BUSINESSINTERFACE_H
 
-#include <QObject>
+#include <QMap>
+#include "Tu_interfacebase.h"
+#include "Tu-pipeline/Tu_pipeline.h"
 
-class BusinessInterface : public QObject
+class BusinessInterface : public InterfaceBase
 {
 	Q_OBJECT
-	Q_ENUMS(RequestCommands)
+	
 public:
 	explicit BusinessInterface(QObject *parent = Q_NULLPTR);
 	~BusinessInterface();
 
-	enum RequestCommands{
-		ONEKEY_SCAN_TRASH,
-		SCAN_TRASH,
-		CLEAN_TRASH
-	};
-
 	void call(const QString &method, const QStringList &argsList);
 
-	// trash
+protected:
+	// Trash
 	void onekey_scan_trash(const QStringList &argsList);
 	void clean_transh(const QStringList &argsList);
 
-	// skin
-	bool copy_file(QString filename);
-	bool delete_file(QString filename);
-
-signals:
-	void sig_evt_message(QString);
-
-	void sig_isScanning(QString);
-	void sig_notifyRecycleBin(quint32, quint64);
-	void sig_notifyScanDirItem(QStringList, QString, QString, qint64);
-	void sig_notifyScanFinished(QString);
-
-	void sig_notifyDeleteFile(QString, quint64);
-	void sig_notifyCleanFinished(QString);
+    void interrupt_task(const QString &method);
+    void interrupt_all_task();
 
 private:
 	void executeCommand(const QString &method, const QStringList &argsList);
 
+    Pipeline *m_taskEngine;
+
+    QMutex m_hash_mutex;
+    QMap<QString, QObject *> m_hash_task;
 };
 
 #endif // TU_BUSINESSINTERFACE_H
